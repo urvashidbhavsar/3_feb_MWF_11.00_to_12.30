@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-color: lawngreen;
+        }
+        /* apply media query */
+        @media (max-width:576px) {
+            p{
+                background-color: aquamarine;
+            }
+        }
+        @media (min-width:576px) {
+            p{
+                background-color: blueviolet;
+            }
+        }
+        @media (min-width:768px) {
+            p{
+                background-color: yellowgreen;
+            }
+        }
+        @media (min-width:992px) {
+            p{
+                background-color: chocolate;
+            }
+        }
+        @media (min-width:1200px) {
+            p{
+            background-color: lawngreen;
+        }
+        }
+    </style>
+</head>
+<body>
+    <!-- media query / responsive website means your website width work with device width 
+    
+    mini-mobile screen             < 576px (max-width)
+    large mobile screen            > 576px (min-width)
+    tablet screen                  > 768px (min-width)
+    mini leptop screen             > 992px (min-width)
+    large leptop screen            > 1140 = 1200 (min-width)
+    tv screen                      > 1400px
+    -->
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, quidem harum corporis obcaecati fugit commodi suscipit iure nemo quas eius ea et ullam sequi illum error qui laudantium, aperiam repellat!
+    </p>
+</body>
+</html>

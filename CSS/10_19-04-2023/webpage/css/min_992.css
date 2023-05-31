@@ -1,0 +1,51 @@
+@media (min-width:992px){
+    /* ==================== navigations =============== */
+    header .navigation .nav{
+        display: block;
+    }
+    header .navigation .btn-menu button{
+        display: none;
+    }
+
+        /* ======== homepage ========== */
+        .homepage .home-content .form-search{
+            display: flex;
+            flex-direction: row;
+        }
+        .homepage .home-content .form-search .input-val-center{
+            display: flex;
+            align-items: center;
+        }
+        .homepage .home-content .form-search .input-val-left{
+            margin: 0px;
+        }
+        .homepage .home-content .form-search input[type="text"]{
+            width: 200px;
+            border-radius: 5px 0px 0px 5px;
+        }
+        .homepage .home-content .form-search .input-val-center {
+            gap:0px;
+        }
+        .homepage .home-content .form-search .input-val-center select{
+            border-radius: 0px;
+            width:  198px;
+        }
+        .homepage .home-content .form-search .btn-search{
+            margin: 0px;
+        }
+        .homepage .home-content .form-search .ser-btn{
+            width: 120px;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+       /* ========= explore categories ======= */
+       .categories .grid-box{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+    }
+      /* ==== working section == */
+      .working .grid-box{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}

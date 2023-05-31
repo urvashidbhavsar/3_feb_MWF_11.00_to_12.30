@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        /* 1st image */
+        .imageOverlay{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .imageOverlay .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.486);
+            display: grid;
+            place-content: center;
+            color: white;
+            text-align: center;
+            transform: scale(0);
+            transition: 1s all ease;
+        }
+        .imageOverlay:hover .text{
+            transform: scale(1) rotate(360deg) rotateY(360deg);
+        }
+
+        /* 2nd image */
+        .imageOverlay1{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .imageOverlay1 .text{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.486);
+            display: grid;
+            place-content: center;
+            color: white;
+            text-align: center;
+            transform: scale(0);
+            transition: 1s all ease;
+        }
+        .imageOverlay1 .text-delay{
+            transform: scale(0);
+            transition: 1s all ease;
+            transition-delay: 2s;
+        }
+        .imageOverlay1:hover .text{
+            transform: scale(1) rotate(360deg) rotateY(360deg);
+        }
+        .imageOverlay1:hover .text-delay{
+            transform: scale(1) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="imageOverlay">
+        <img src="img1.jpg" alt="">
+        <div class="text">
+            <h1>Hello world</h1>
+            <p>Image Overlay</p>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="imageOverlay1">
+        <img src="img1.jpg" alt="">
+        <div class="text">
+            <div class="text-delay">
+                <h1>Hello world</h1>
+                <p>Image Overlay</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

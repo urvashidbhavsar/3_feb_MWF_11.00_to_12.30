@@ -1,0 +1,19 @@
+window object 
+(1) alert()
+(2) confirm()
+(3) prompt()
+(4) open()
+(5) close()
+
+    alert(), confirm() and prompt() also known as a popup boxes.
+
+history object 
+(1) go()
+(2) back()
+(3) forword()
+
+navigator object 
+used properties
+
+screen object 
+used properties

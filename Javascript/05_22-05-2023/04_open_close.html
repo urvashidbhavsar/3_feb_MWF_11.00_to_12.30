@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="open_fun()">Open</button>
+    <button onclick="close_fn()">Close</button>
+    <button onclick="forword_fun()">Forward</button>
+    <script>
+        var open_link = "https://github.com/"
+        var close_link;
+        function open_fun(){
+         close_link = window.open(open_link)
+        }
+        function close_fn(){
+           close_link.window.close()
+        }
+        function forword_fun(){
+            history.forward()
+        }
+    </script>
+</body>
+</html>

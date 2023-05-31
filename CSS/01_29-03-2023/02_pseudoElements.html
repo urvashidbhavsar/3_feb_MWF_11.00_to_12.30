@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .head::after{
+            content: "\1F60E";
+       }
+       .head::before{
+            content: "\1F60E";
+       }
+       .div1{
+        height: auto;
+        width: 200px;
+        padding: 10px;
+        border: 2px solid black;
+       }
+       .div1::first-letter{
+        font-size: 30px;
+       }
+       .div1::first-line{
+        color: blue;
+       }
+       input::placeholder{
+            color: black;
+            font-size: 10px;
+       }
+       li::marker{
+        color: blue;
+       }
+       .div1::selection{
+            background-color: black;
+            color: white;
+       }
+    </style>
+</head>
+<body>
+    <h1 class="head">Hello world</h1>
+    <div class="div1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. At tenetur officiis aliquid maiores vero possimus autem facilis, dolor nam illo non quasi voluptatum, quo voluptates fugit, quae vel deserunt aut?
+    </div>
+    <br><br>
+    <input type="text" name="" id="" placeholder="Enter any value">
+    <ul>
+        <li>list 1</li>
+        <li>list 2</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .displayMath{
+            height: auto;
+            width: 200px;
+            border: 1px solid black;
+        }
+        p{
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Number</label>
+        <input type="text" name="" id="num">
+        <button onclick="return display_table()">Display</button>
+    </form>
+    <br><br>
+    <div class="displayMath"></div>
+    <script>
+        function display_table(){
+            let number = document.getElementById("num").value;
+            let disp = document.querySelector(".displayMath")
+            if(number == "")
+            {
+                alert("Enter Number")
+            }else{
+                var i = 1,res="";
+                for(i = 1; i<=10; i++){
+                    res = res + "<p>" + number + "*" + i + "=" + number*i + "</p>";
+                }
+            }
+            disp.innerHTML = res
+        }
+    </script>
+</body>
+
+</html>

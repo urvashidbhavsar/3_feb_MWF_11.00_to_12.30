@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- loop :
+        it is count number of iteration
+
+        there is loop types are :
+        (1) while loop
+        (2) do..while loop
+        (3) for loop
+        (4) for..in loop (array)
+        (5) for..of loop (object)
+        (6) foreach loop
+    -->
+
+    <!-- print 1 to 10 number -->
+    <script>
+        let a = 1;
+        // while(condition){
+            // statements; increment/decrement;
+        // }
+        while(a <= 10){
+            document.writeln(a);
+            a++
+        }
+        // document.write(a)
+        document.write("<br> =========================== <br>")
+        let b = 1;
+        // do{
+        //     statement;
+        //     increment / decrement 
+        // }while(condition)
+        do{
+            document.writeln(b);
+            b++;
+            // b = b + 2;
+        }while(b < 11);
+        document.write("<br> =========================== <br>")
+
+        // for(declaration; condition; increment/decrement){
+            // statement
+        // }
+        let c = 1;
+        for(c = 1; c <= 10; c++){
+            document.writeln(c)
+        }
+
+        let d = 10;
+        for(d=10; d >= 1; d--){
+            document.writeln(d)
+        }
+    </script>
+</body>
+</html>

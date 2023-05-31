@@ -1,0 +1,14 @@
+@media (min-width:1200px){
+    .container{
+        margin: 0px 80px;
+    }
+    /* ==================== navigations =============== */
+    /* navigations inherit from 992px*/
+
+       /* ========= explore categories ======= */
+       .categories .grid-box{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+    
+}

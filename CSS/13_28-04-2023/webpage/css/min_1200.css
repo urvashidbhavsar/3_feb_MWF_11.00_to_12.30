@@ -1,0 +1,34 @@
+@media (min-width:1200px){
+    .container{
+        margin: 0px 80px;
+    }
+    /* ==================== navigations =============== */
+    /* navigations inherit from 992px*/
+
+       /* ========= explore categories ======= */
+       .categories .grid-box{
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    /* freelancer section inherit from 992px */
+       /* ======= footer ========= */
+       footer .footer-content{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    footer .footer-content .footer-logo{
+        border-right: 1px solid gray;
+        border-bottom: 0;
+    }
+    footer .footer-content .footer-count{
+        border-right: 1px solid gray;
+        border-bottom: 0;
+        justify-items: center;
+    }
+     /* === footer grid === */
+     footer .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 2fr;
+    }
+}

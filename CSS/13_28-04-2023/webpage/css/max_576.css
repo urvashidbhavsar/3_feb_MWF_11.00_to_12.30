@@ -1,0 +1,111 @@
+@media (max-width:576px){
+    .container{
+        margin: 0px 30px;
+    }
+    /* ==================== navigations =============== */
+    header .navigation .nav{
+        flex: 1;
+        display: none;
+    }
+    header .navigation .btn-menu button{
+        display: block;
+    }
+    /* ======== homepage ========== */
+    .homepage .home-content .form-search{
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage .home-content .search{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .homepage .home-content .form-search .input-val-center{
+        display: flex;
+        align-items: center;
+    }
+    .homepage .home-content .form-search .input-val-left{
+        margin: 5px;
+    }
+    .homepage .home-content .form-search input[type="text"]{
+        width: 305px;
+        border-radius: 5px;
+    }
+    .homepage .home-content .form-search .input-val-center {
+        gap:5px;
+    }
+    .homepage .home-content .form-search .input-val-center select{
+        width:150px;
+        border-radius: 5px;
+    }
+    .homepage .home-content .form-search .btn-search{
+        margin: 5px;
+    }
+    .homepage .home-content .form-search .ser-btn{
+        width: 305px;
+        border-radius: 5px;
+    }
+    /* ========= explore categories ======= */
+    .categories .grid-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* ==== working section == */
+    .working .grid-box{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ===== feature job ======= */
+    .feature-job .job-box .job-details .job-des{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-job .job-box .job-details{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+    /* ====== browse-job ======== */
+    .browse-job .browse-job-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* ====== freelancer ======== */
+    .freelancer .freelancer-grid{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 20px;
+    }
+    /* ======= footer ========= */
+    footer .footer-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer .footer-content .footer-logo{
+        border-right: 0;
+    }
+    footer .footer-content .footer-count{
+        border-right: 0;
+        grid-template-columns: repeat(2,1fr);
+    }
+    /* === footer grid === */
+    footer .footer-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    footer .footer-grid form{
+        text-align: center;
+    }
+    /* ========== bottom footer =========== */
+    .bottom-footer .b-f-grid{
+        display: flex;
+        flex-direction: column;
+    }
+    .bottom-footer .b-f-grid .right-link ul{
+        display: flex;
+        flex-direction: column  ;
+    }
+}

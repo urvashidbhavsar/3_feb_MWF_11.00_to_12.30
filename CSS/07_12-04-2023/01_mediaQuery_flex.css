@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.cons-margin{
+    margin: 0px 80px;
+}
+/* css */
+.construction{
+    background-color: lavenderblush;
+}
+.construction .cons-padding{
+    padding: 40px 0px;
+}
+.construction .flex-box{
+    display: flex;
+    gap: 20px;
+}
+.construction .flex-box .leftside{
+    flex: 1;
+}
+.construction .flex-box .leftside h1{
+    font-size: 40px;
+    text-transform: capitalize;
+}
+.construction .flex-box .leftside .divide::after{
+    content: "";
+    height: 2px;
+    width: 150px;
+    background-color: blueviolet;
+    display: block;
+    margin: 20px 0px;
+}
+.construction .flex-box .leftside p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(82, 81, 81);
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+.construction .flex-box .leftside ul{
+    line-height: 30px;
+}
+.construction .flex-box .leftside li i{
+    padding-right: 10px;
+    color: green;
+}
+.construction .flex-box .rightside{
+    flex: 1;
+}
+.construction .flex-box .rightside img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+/* === media query === */
+@media (max-width:576px) {
+    .cons-margin{
+        margin: 0px 20px;
+    }
+    .construction .flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media (min-width:576px) {
+    .cons-margin{
+        margin: 0px 20px;
+    }
+    .construction .flex-box{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+@media (min-width:768px) {
+    .cons-margin{
+        margin: 0px 50px;
+    }
+}
+@media (min-width:992px) {
+    .construction .flex-box{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width:1200px) {
+  .cons-margin{
+    margin: 0px 80px;
+  }  
+}

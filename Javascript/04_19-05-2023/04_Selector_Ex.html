@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // document.getElementById("p1").innerText = "Hello user!!!"
+    </script>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p class="p4"></p>
+    <h3></h3>
+    <script>
+        document.getElementById("p1").innerText = "<i>Hello user!!!</i>"
+        document.getElementById("p2").innerHTML = "<i>Hello user!!!</i>"
+
+        // it call id, class and element
+        document.querySelector("#p3").innerText = "id query selector"
+        document.querySelector(".p4").innerText = "class query selector"
+        document.querySelector("h3").innerHTML = "Hello world"
+    </script>
+</body>
+</html>

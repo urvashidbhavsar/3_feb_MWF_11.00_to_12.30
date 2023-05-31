@@ -1,0 +1,4 @@
+BOM => Browser object modal 
+DOM => Document object modal
+
+DOM is a part of BOM.

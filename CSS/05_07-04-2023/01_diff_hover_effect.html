@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image: linear-gradient(darkblue,rgb(39, 39, 164),darkblue);
+        }
+        .main{
+            margin: 50px;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 60px;
+            justify-items: center;
+        }
+        button{
+            border: 2px solid white;
+            height: 30px;
+            width: 120px;
+            background-color: transparent;
+            color: white;
+            transition: 1s all ease-in-out;
+        }
+        .btn1:hover{
+            transform: rotate(360deg);
+        }
+        .btn2:hover{
+            transform: rotateX(180deg);
+        }
+        .btn3:hover{
+            transform: rotateY(180deg);
+        }
+        .btn4:hover{
+            transform: scale(1.1);
+        }
+        .btn5:hover{
+            transform: scale(0.9);
+        }
+        .btn6:hover{
+            transform: translateX(10px);
+        }
+        .btn7:hover{
+            transform: translateY(10px);
+        }
+        .btn8:hover{
+            border-left: 10px solid white;
+            border-right:10px solid white
+        }
+        .btn9:hover{
+            border-top: 5px solid white;
+            border-bottom: 5px solid white;
+        }
+        .btn10,.btn11{
+            border-radius: 10px;
+        }
+        .btn10:hover{
+            border: 2px ridge red;
+            border-radius: 0;
+        }
+        .btn11:hover{
+            border: 5px dashed brown;
+            border-radius: 0;
+        }
+        .btn12:hover{
+            border: 5px groove crimson;
+        }
+        a{
+            color: white;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .link1::after{
+            content: "";
+            height: 3px;
+            width: 130px;
+            background-color: red;
+            display: block;
+            transition: 1s all ease-in-out;
+            transform: scaleX(0);
+        }
+        .link1:hover::after{
+            transform: scaleX(1);
+        }
+        .link2::after{
+            content: "";
+            height: 3px;
+            width: 130px;
+            background-color: red;
+            display: block;
+            transition: 1s all ease-in-out;
+            transform: scaleY(0);
+        }
+        .link2:hover::after{
+            transform: scaleY(1);
+        }
+        .link3::after{
+            content: "";
+            height: 3px;
+            width: 130px;
+            background-color: red;
+            display: block;
+            transition: 1s all ease-in-out;
+            transform-origin: 100% 0%;
+            transform: scaleX(0);
+        }
+        .link3:hover::after{
+            transform: scaleX(1);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div>
+            <button class="btn1">Click Here</button>
+        </div>
+        <div>
+            <button class="btn2">Click Here</button>
+        </div>
+        <div>
+            <button class="btn3">Click Here</button>
+        </div>
+        <div>
+            <button class="btn4">Click Here</button>
+        </div>
+        <div>
+            <button class="btn5">Click Here</button>
+        </div>
+        <div>
+            <button class="btn6">Click Here</button>
+        </div>
+        <div>
+            <button class="btn7">Click Here</button>
+        </div>
+        <div>
+            <button class="btn8">Click Here</button>
+        </div>
+        <div>
+            <button class="btn9">Click Here</button>
+        </div>
+        <div>
+            <button class="btn10">Click Here</button>
+        </div>
+        <div>
+            <button class="btn11">Click Here</button>
+        </div>
+        <div>
+            <button class="btn12">Click Here</button>
+        </div>
+        <div>
+            <a href="" class="link1">Click Here</a>
+        </div>
+        <div>
+            <a href="" class="link2">Click Here</a>
+        </div>
+        <div>
+            <a href="" class="link3">Click Here</a>
+        </div>
+    </div>
+</body>
+</html>

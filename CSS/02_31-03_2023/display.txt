@@ -1,0 +1,22 @@
+display : flex 
+
+some property are work with only display flex.
+
+flex 
+flex-grow 
+flex-shrink 
+flex-basis 
+flex-wrap 
+flex-direction 
+flex-flow 
+justify-content 
+align-items 
+gap 
+
+some property are work with only display grid 
+grid-templete-colums 
+grid-templete-rows 
+gap 
+align-items 
+justify-items 
+place-content 

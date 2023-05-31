@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function user_input(){
+            let inp = document.getElementById("userinp").value;
+
+            document.getElementById("msg").innerText = inp;
+            return false;
+
+            // another way to get value from user using with form
+            // let inp = document.form1.userVal.value;
+            // document.getElementById("msg").innerText = inp;
+            // return false;
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="form1">
+        Enter Any Value : 
+        <input type="text" name="userVal" id="userinp" value="">
+        <button onclick="return user_input()">Click Here</button>
+    </form>
+    <p id="msg"></p>
+</body>
+</html>
