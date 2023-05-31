@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    ul{
+        list-style-type: none;
+    }
+    .nav {
+        padding: 20px;
+        background-color: crimson;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: end;
+        gap: 30px;
+    }
+    .nav ul a{
+        color: white;
+        font-weight: 700;
+        text-decoration: none;
+    }
+    .fa-caret-down{
+        color: white;
+    }
+    .nav .Create_drop{
+        position: relative;
+    }
+    .nav .dropdown{
+        display: none;
+    }
+    .nav .drop{
+        display: block;
+        position: absolute;
+        top: 28px;
+        background-color: rgba(0, 0, 0, 0.67);
+        left: 0;
+        width: 100px;
+        height: auto;
+        flex-direction: column;
+        padding: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li class="Create_drop">
+                <a href="#">Pages
+                    <span class="fa-solid fa-caret-down"></span>
+                </a>
+                <ul id="dropmenu" class="dropdown">
+                    <li><a href="">Page 1</a></li>
+                    <li><a href="">Page 2</a></li>
+                    <li><a href="">Page 3</a></li>
+                </ul>
+            </li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <script>
+        let dropclick = document.querySelector(".Create_drop")
+        let dropmenu = document.getElementById("dropmenu");
+        dropclick.addEventListener("click",function(){
+            dropmenu.classList.toggle("drop")
+        })
+    </script>
+</body>
+</html>
