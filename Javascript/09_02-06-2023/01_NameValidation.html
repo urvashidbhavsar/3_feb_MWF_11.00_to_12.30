@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function check_name() {
+            let uname = document.getElementById("uname").value;
+            if (uname == "" || uname == null) {
+                // alert("Enter name");
+                document.getElementById("msg").innerText = "Enter name";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+        // regular expression => there is special symbols, to run your code
+        function name_reg_ex() {
+            let user = document.getElementById("uname").value;
+            let reg_ex = /^[a-zA-Z]*$/
+            // test() 
+            // match()
+            if (user.match(reg_ex)) {
+                document.getElementById("msg").innerText = "";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "Number not allowed";
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Enter Name :</label>
+                </td>
+                <td>
+                    <input type="text" id="uname" onkeyup="return name_reg_ex()" onblur="return check_name()">
+                </td>
+                <td>
+                    <span id="msg"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="return check_name()">Click Here</button>
+                </td>
+            </tr>
+        </table>
+        <!-- <input type="text" name="" id="" value="abc" readonly onkeydown="alert('you cant change the value');"> -->
+    </form>
+</body>
+
+</html>

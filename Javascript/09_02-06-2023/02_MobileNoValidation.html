@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            padding: 10px;
+        }
+
+        div {
+            color: red;
+        }
+    </style>
+    <script>
+        function check_no() {
+            let mobile = document.getElementById("mno").value;
+            if (mobile == "" || mobile == null) {
+                document.getElementById("msg").innerText = "Enter Number"
+                return false;
+            } else {
+                document.getElementById("msg").innerText = ""
+                return false;
+            }
+        }
+        function reg_ex_no() {
+            let mobile = document.getElementById("mno").value;
+            let reg_ex = /^[0-9]*$/
+            if (reg_ex.test(mobile)) {
+                document.getElementById("msg").innerText = "";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "Alphabet not allowed";
+                return false
+            }
+        }
+
+        function length_mobile() {
+            let mobile = document.getElementById("mno").value;
+            if (mobile.length < 10) {
+                document.getElementById("msg1").innerText = "Enter proper Number";
+                return false;
+            } else {
+                document.getElementById("msg1").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Enter Mobile No :</label>
+                </td>
+                <td>
+                    <input type="text" id="mno" onblur="return length_mobile()" maxlength="10"
+                        onkeyup="return reg_ex_no()">
+                </td>
+                <td>
+                    <div id="msg"></div>
+                    <div id="msg1"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="return check_no()">Click Here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
