@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #msg{
+            color: red;
+        }
+    </style>
+    <script>
+        function check_email(){
+            let email = document.getElementById("email").value;
+            if(email == "" || email == null){
+                document.getElementById("msg").innerText = "Enter Email"
+                return false
+            }else{
+                document.getElementById("msg").innerText = ""
+                return false;
+            }
+        }
+        function email_reg_ex(){
+            let email = document.getElementById("email").value;
+            let ex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+            if(ex.test(email)){
+                document.getElementById("msg").innerText = ""
+                return false
+            }else{
+                document.getElementById("msg").innerText = "Enter proper email"
+                return false
+            }
+        }
+    </script>
+</head>
+<body>
+     <form action="#" method="post">
+        <table>
+            <tr>
+                <td>
+                    <label for="">Enter Email id</label>
+                </td>
+                <td>
+                    <input type="text" id="email" onblur="return check_email()" onkeyup="return email_reg_ex()">
+                </td>
+                <td>
+                    <div id="msg"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <button onclick="return check_email()">Click Here</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
