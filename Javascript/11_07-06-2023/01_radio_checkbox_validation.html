@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function check_value() {
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            let other = document.getElementById("other").checked;
+            let c1 = document.getElementById("c1").checked;
+            let c2 = document.getElementById("c2").checked;
+            let c3 = document.getElementById("c3").checked;
+            if (male == false && female == false && other == false) {
+                document.getElementById("msg").innerText = "Select Gender"
+                return false;
+            } else if (c1 == false && c2 == false && c3 == false) {
+                document.getElementById("msg2").innerText = "Select Subject"
+                return false;
+            } else {
+                document.getElementById("msg").innerText = ""
+                document.getElementById("msg2").innerText = ""
+                return false;
+            }
+        }
+    </script>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Gender</label>
+        <input type="radio" name="gen" id="male" onblur="return check_value()"> Male
+        <input type="radio" name="gen" id="female" onblur="return check_value()"> Female
+        <input type="radio" name="gen" id="other" onblur="return check_value()"> Other
+        <span id="msg"></span>
+
+        <br><br>
+        <label for="">Subject</label>
+        <input type="checkbox" name="" id="c1"> HTML
+        <input type="checkbox" name="" id="c2"> CSS
+        <input type="checkbox" name="" id="c3"> Javascript
+        <span id="msg2"></span>
+
+        <br><br>
+        <button type="submit" onclick="return check_value()">Click</button>
+    </form>
+</body>
+
+</html>
