@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="regpage">
+        <form action="#">
+            <h3>Registration page</h3>
+            <!-- first name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="fname" onblur="blank_check(this,'msg')"
+                        onkeyup="return name_expression(this, 'msg')">
+                </div>
+                <div class="col">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- last name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="lname" onblur="blank_check(this,'msg1')"
+                        onkeyup="return name_expression(this,'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+            <!-- date -->
+            <div class="row">
+                <div class="col">
+                    <label for="">BirthDate</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="" id="dob" onblur="blank_check(this,'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button onclick="return form_submit()">Register</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

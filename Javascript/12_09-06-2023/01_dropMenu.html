@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .submenu {
+            display: none;
+        }
+
+        .submenu.active {
+            display: block;
+        }
+
+        .inner-submenu {
+            display: none;
+        }
+
+        .inner-submenu.active {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        <div class="container">
+            <div class="padding">
+                <div class="leftside">
+                    <h1>Hello World</h1>
+                </div>
+                <div class="rightside">
+                    <ul class="menu">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li class="has-submenu">
+                            <a href="">Services</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="">service1</a>
+                                    <ul class="inner-submenu">
+                                        <li><a href="">selfservice</a></li>
+                                        <li><a href="">selfservice</a></li>
+                                        <li><a href="">selfservice</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">service2</a></li>
+                                <li><a href="">service3</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
