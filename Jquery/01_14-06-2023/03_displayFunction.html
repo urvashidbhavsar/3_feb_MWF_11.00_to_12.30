@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn1").click(function () {
+                $(".head1").hide(2000)
+            })
+            $(".btn2").click(function () {
+                $(".head1").show(2000)
+            })
+            $(".btn3").click(function () {
+                $(".head2").toggle(2000)
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!-- display functions => hide(), show(), toggle() -->
+    <button class="btn1">Hide()</button>
+    <button class="btn2">Show()</button>
+    <button class="btn3">Toggle()</button>
+
+    <br><br>
+    <h1 class="head1">Hello user</h1>
+    <h2 class="head2">We learn jquery</h2>
+</body>
+
+</html>
