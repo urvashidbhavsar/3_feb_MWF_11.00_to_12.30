@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .main {
+            display: flex;
+            gap: 30px;
+            /* justify-content: space-between; */
+        }
+
+        .div1,
+        .div2,
+        .div3 {
+            height: 150px;
+            width: 150px;
+        }
+
+        .div1 {
+            background-color: darkred;
+        }
+
+        .div2 {
+            background-color: darkblue;
+        }
+
+        .div3 {
+            background-color: magenta;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".div1").slideUp(5000);
+            })
+            $("#btn2").click(function () {
+                $(".div1").slideDown(5000);
+            })
+            $("#btn3").click(function () {
+                $(".div2").slideToggle();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">SlideUp</button>
+    <button id="btn2">SlideDown</button>
+    <button id="btn3">SlideToggle</button>
+    <hr>
+    <div class="main">
+        <div class="div1"></div>
+        <div class="div2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // for single property value
+                // $("h1").css("color", "red")
+                $("h1").css({ color: "red", backgroundColor: "green", fontSize: "40px", fontFamily: "Verdana", fontWeight: "300" })
+
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <h1>Hello user</h1>
+</body>
+
+</html>

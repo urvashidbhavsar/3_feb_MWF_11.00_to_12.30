@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .div1 {
+            background-color: darkred;
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $(".div1").mouseover(function () {
+                $(".div1").animate({ height: "200px", width: "200px", borderRadius: "50%", marginLeft: "40px", marginTop: "50px" })
+            })
+            $(".div1").mouseout(function () {
+                $(".div1").animate({ height: "100px", width: "100px", borderRadius: "0%", marginLeft: "0", marginTop: "0" })
+            })
+        })
+        // document.body.style.backgroundColor
+    </script>
+</head>
+
+<body>
+    <div class="div1"></div>
+</body>
+
+</html>

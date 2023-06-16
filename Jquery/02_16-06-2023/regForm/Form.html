@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $(".regpage").toggle(2000);
+            })
+            $("#btn2").click(function () {
+                $(".regpage").fadeToggle(2000);
+            })
+            $("#btn3").click(function () {
+                $(".regpage").slideToggle(2000);
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Toggle</button>
+    <button id="btn2">FadeToggle</button>
+    <button id="btn3">SlideToggle</button>
+    <hr>
+    <div class="regpage">
+        <form action="#">
+            <h3>Registration page</h3>
+            <!-- first name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">First Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="fname" onblur="blank_check(this,'msg')"
+                        onkeyup="return name_expression(this, 'msg')">
+                </div>
+                <div class="col">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- last name -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Last Name</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="lname" onblur="blank_check(this,'msg1')"
+                        onkeyup="return name_expression(this,'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+            <!-- date -->
+            <div class="row">
+                <div class="col">
+                    <label for="">BirthDate</label>
+                </div>
+                <div class="col">
+                    <input type="date" name="" id="dob" onblur="blank_check(this,'msg2')">
+                </div>
+                <div class="col">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+            <!-- radio button -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Gender</label>
+                </div>
+                <div class="col">
+                    <input type="radio" name="gen" id="male" onblur="return  blank_radio_check(this,'msg3')">
+                    <label for="">Male</label>
+                    <input type="radio" name="gen" id="female" onblur="return  blank_radio_check(this,'msg3')">
+                    <label for="">Female</label>
+                    <input type="radio" name="gen" id="other" onblur="return  blank_radio_check(this,'msg3')">
+                    <label for="">Others</label>
+                </div>
+                <div class="col">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+            <!-- address -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Address</label>
+                </div>
+                <div class="col">
+                    <textarea name="" id="adr" cols="40" rows="3" placeholder="character must be in 20 to 100."
+                        maxlength="100" onblur="return blank_check(this,'msg4')"
+                        onkeyup="return adr_length(this, 'msg4')"></textarea>
+                </div>
+                <div class="col">
+                    <span id="msg4"></span>
+                </div>
+            </div>
+            <!-- city -->
+            <div class="row">
+                <div class="col">
+                    <label for="">City</label>
+                </div>
+                <div class="col">
+                    <select name="" id="city" onblur="return select_val(this,'msg5')">
+                        <option value="-1">---select---</option>
+                        <option value="">Surat</option>
+                        <option value="">Baroda</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+            <!-- pincode -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Pincode</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="pin" onblur="blank_check(this,'msg6')" maxlength="6"
+                        onkeyup="return pin_length(this, 'msg6')">
+                </div>
+                <div class="col">
+                    <span id="msg6"></span>
+                </div>
+            </div>
+            <!-- mobile no -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Mobile No</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="mno" onblur="blank_check(this,'msg7')" maxlength="10"
+                        onkeyup="return mobile_length(this, 'msg7')">
+                </div>
+                <div class="col">
+                    <span id="msg7"></span>
+                </div>
+            </div>
+            <!-- email id -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Email id</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="" id="email" onblur="blank_check(this,'msg8')"
+                        onkeyup="return email_ex(this, 'msg8')">
+                </div>
+                <div class="col">
+                    <span id="msg8"></span>
+                </div>
+            </div>
+            <!-- password -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Password</label>
+                </div>
+                <div class="col passicon">
+                    <input type="password" name="" id="pass" onblur="blank_check(this,'msg9')" maxlength="12"
+                        onkeyup="return pass_ex(this, 'msg9')">
+                    <div class="icon">
+                        <span class="fa-solid fa-eye" id="icon1" onclick="return showpass()"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg9"></span>
+                </div>
+            </div>
+            <!-- confirm password -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Confirm password</label>
+                </div>
+                <div class="col passicon">
+                    <input type="password" name="" id="cpass" onblur="blank_check(this,'msg10')" maxlength="12"
+                        onkeyup="return compare_pass()">
+                    <div class="icon">
+                        <span class="fa-solid fa-eye" id="icon2" onclick="cshowpass()"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <span id="msg10"></span>
+                </div>
+            </div>
+            <!-- submit button -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button onclick="return form_submit()">Register</button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

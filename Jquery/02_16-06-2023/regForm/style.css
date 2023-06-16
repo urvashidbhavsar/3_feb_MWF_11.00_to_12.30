@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.regpage {
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+}
+
+.regpage h3 {
+    text-align: center;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    gap: 20px;
+    padding: 5px;
+}
+
+.col {
+    align-self: center;
+}
+
+input[type="text"],
+[type="date"],
+[type="password"],
+select {
+    height: 25px;
+    width: 250px;
+    padding: 0px 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: 1px solid transparent;
+}
+
+span {
+    color: red;
+}
+
+.passicon {
+    position: relative;
+}
+
+.passicon .icon {
+    position: absolute;
+    top: 5px;
+    right: 58px;
+}
+
+.passicon .icon span {
+    color: black;
+}
