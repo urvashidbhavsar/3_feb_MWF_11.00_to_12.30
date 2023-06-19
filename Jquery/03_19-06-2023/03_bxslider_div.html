@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .bx-wrapper {
+            border: none;
+            box-shadow: none;
+        }
+
+        .bx-wrapper .bx-controls-direction a.bx-prev {
+            top: unset;
+            left: 27px;
+            bottom: 5px;
+        }
+
+        .bx-wrapper .bx-controls-direction a.bx-next {
+            top: unset;
+            left: 66px;
+            bottom: 5px;
+        }
+
+        .bxdata {
+            display: flex;
+        }
+
+        .image,
+        .text {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- it is a library which is provide you a slider -->
+    <div class="bxslider">
+        <div class="image1">
+            <div class="bxdata">
+                <div class="image">
+                    <img src="image1.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Image 1</h1>
+                </div>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="bxdata">
+                <div class="text">
+                    <h1>Image 2</h1>
+                </div>
+                <div class="image">
+                    <img src="image2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="image3">
+            <div class="bxdata">
+                <div class="image">
+                    <img src="image3.jpg" alt="">
+                </div>
+                <div class="text">
+                    <h1>Image 3</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- jquery slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "horizontal",
+                speed: 2000,
+                infiniteLoop: true,
+                // hideControlOnEnd: true,
+                pager: true,
+                // pagerType: "short",
+                // pagerShortSeparator: "-"
+                controls: true,
+                auto: true,
+                autoHover: true,
+            });
+        })
+    </script>
+</body>
+
+</html>
