@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 600px;
+        }
+
+        /* .slick-prev {
+            left: 0;
+        }
+
+        .slick-next {
+            right: 0;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="HomeSlider">
+        <div class="images">
+            <img src="images/image1.avif" alt="">
+        </div>
+        <div class="images">
+            <img src="images/image2.avif" alt="">
+        </div>
+        <div class="images">
+            <img src="images/image3.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- slick main -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.HomeSlider').slick({
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: false,
+                dots: true,
+                pauseOnHover: true,
+            });
+        });
+    </script>
+</body>
+
+</html>
