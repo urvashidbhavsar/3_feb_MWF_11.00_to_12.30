@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $(".head").load("02_Traversing.txt")
+                $(".head").load("01_Dropdown.html")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <!-- Ajax = Asynchonised javascript and xml 
+        xml => extentible markup language
+
+        used to load external file without reload whole page
+    -->
+    <button id="btn1">Click Here to Load Ajax</button>
+    <hr>
+
+    <div class="head"></div>
+</body>
+
+</html>

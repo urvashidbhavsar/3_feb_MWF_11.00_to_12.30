@@ -1,0 +1,6 @@
+traversing means move through any element.
+
+(1) ancestor  (parent)
+(2) decendent  (child)
+(3) sliblings
+(4) filter

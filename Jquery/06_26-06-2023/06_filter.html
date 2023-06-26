@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        .changecss {
+            color: blue;
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p {
+            border: 2px solid black;
+            margin: 5px;
+            width: 80%;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("p").filter("#p1, #p2").addClass("changecss")
+                // $("p").first().addClass("changecss")
+                // $("p").last().addClass("changecss")
+                // $("p").eq(2).addClass("changecss")
+                $("p").not("#p3").addClass("changecss")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div class="main">
+        <p id="p1">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor, molestiae dolorum molestias, ea sunt
+            optio nihil illo reprehenderit eligendi nulla obcaecati tempore quo praesentium vel saepe ipsum consequatur
+            nesciunt.
+        </p>
+        <p id="p2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor, molestiae dolorum molestias, ea sunt
+            optio nihil illo reprehenderit eligendi nulla obcaecati tempore quo praesentium vel saepe ipsum consequatur
+            nesciunt.
+        </p>
+        <p id="p3">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor, molestiae dolorum molestias, ea sunt
+            optio nihil illo reprehenderit eligendi nulla obcaecati tempore quo praesentium vel saepe ipsum consequatur
+            nesciunt.
+        </p>
+        <p id="p4">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum dolor, molestiae dolorum molestias, ea sunt
+            optio nihil illo reprehenderit eligendi nulla obcaecati tempore quo praesentium vel saepe ipsum consequatur
+            nesciunt.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        div,
+        h1 {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .changecss {
+            border: 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $(".sub-div1").parent().addClass("changecss")
+                // $(".sub-div1").parents(".main").addClass("changecss")
+                $(".sub-div1").parentsUntil("body").addClass("changecss")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div class="main">
+        main
+        <div class="sub1">
+            sub1
+            <h1>Heading 1 line 1</h1>
+            <div class="sub-div1">sub div 1</div>
+        </div>
+        <div class="sub2">
+            sub2
+            <h1>Heading 1 line 2</h1>
+            <div class="sub-div2">sub div 2</div>
+        </div>
+        <div class="sub3">
+            sub3
+            <h1>Heading 1 line 3</h1>
+            <div class="sub-div3">sub div 3</div>
+        </div>
+    </div>
+</body>
+
+</html>

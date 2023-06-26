@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <style>
+        div,
+        h1 {
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+
+        .changecss {
+            border: 2px solid red;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $(".sub1").siblings().addClass("changecss")
+                // $(".sub1").next().addClass("changecss")
+                // $(".sub1").nextAll().addClass("changecss")
+                // $(".sub1").nextUntil(".sub4").addClass("changecss")
+                // $(".sub4").prev().addClass("changecss")
+                // $(".sub4").prevAll().addClass("changecss")
+                $(".sub4").prevUntil(".sub1").addClass("changecss")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <div class="main">
+        main
+        <div class="sub1">
+            sub1
+            <h1>Heading 1 line 1</h1>
+            <div class="sub-div1">sub div 1</div>
+        </div>
+        <div class="sub2">
+            sub2
+            <h1>Heading 1 line 2</h1>
+            <div class="sub-div2">sub div 2</div>
+        </div>
+        <div class="sub3">
+            sub3
+            <h1>Heading 1 line 3</h1>
+            <div class="sub-div3">sub div 3</div>
+        </div>
+        <div class="sub4">
+            sub4
+            <h1>Heading 1 line 4</h1>
+            <div class="sub-div4">sub div 4</div>
+        </div>
+    </div>
+</body>
+
+</html>
