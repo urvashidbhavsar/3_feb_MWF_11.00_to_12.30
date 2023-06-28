@@ -1,0 +1,24 @@
+@media (min-width:768px){
+    .container{
+        margin: 0px 50px;
+    }
+    /* ==================== navigations =============== */
+   /* navigation value inherit from min-width 576px */
+
+       /* ======== homepage ========== */
+    .homepage .home-content .form-search input[type="text"]{
+        width: 500px;
+        border-radius: 5px;
+    }
+    .homepage .home-content .form-search .input-val-center select{
+        border-radius: 5px;
+        width: 248px;
+    }
+    .homepage .home-content .form-search .btn-search{
+        margin: 5px;
+    }
+    .homepage .home-content .form-search .ser-btn{
+        width: 500px;
+        border-radius: 5px;
+    }
+}

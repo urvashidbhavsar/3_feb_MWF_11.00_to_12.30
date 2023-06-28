@@ -1,0 +1,42 @@
+@media (max-width:576px){
+    .container{
+        margin: 0px 30px;
+    }
+    /* ==================== navigations =============== */
+    header .navigation .nav{
+        flex: 1;
+        display: none;
+    }
+    header .navigation .btn-menu button{
+        display: block;
+    }
+    /* ======== homepage ========== */
+    .homepage .home-content .form-search{
+        display: flex;
+        flex-direction: column;
+    }
+    .homepage .home-content .form-search .input-val-center{
+        display: flex;
+        align-items: center;
+    }
+    .homepage .home-content .form-search .input-val-left{
+        margin: 5px;
+    }
+    .homepage .home-content .form-search input[type="text"]{
+        width: 400px;
+        border-radius: 5px;
+    }
+    .homepage .home-content .form-search .input-val-center {
+        gap:5px;
+    }
+    .homepage .home-content .form-search .input-val-center select{
+        border-radius: 5px;
+    }
+    .homepage .home-content .form-search .btn-search{
+        margin: 5px;
+    }
+    .homepage .home-content .form-search .ser-btn{
+        width: 400px;
+        border-radius: 5px;
+    }
+}
