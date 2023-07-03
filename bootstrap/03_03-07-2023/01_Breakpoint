@@ -1,0 +1,17 @@
+breakpoint means break a width of responsive website 
+
+custom css                          bootstrap 
+(max-width:576px)                      -      (xs)
+(min-width:576px)                      sm 
+(min-width:768px)                      md 
+(min-width:992px)                      lg 
+(min-width:1200px)                     xl 
+(min-width:1400px)                     xxl 
+
+
+flexbox = grid system 
+row class  flex 
+col class 
+gap = gutters 
+
+container & container-fluid 

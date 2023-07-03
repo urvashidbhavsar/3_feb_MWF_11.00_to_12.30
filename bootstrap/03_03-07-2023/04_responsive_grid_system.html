@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        div {
+            /* border: 1px solid black; */
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .mydiv {
+            border: 2px solid blue;
+        }
+
+        @media (max-width:576px) {
+            .mynewdiv {
+                width: unset;
+            }
+        }
+
+        @media (min-width:576px) {
+            .mynewdiv {
+                width: unset;
+            }
+        }
+
+        @media (min-width:768px) {
+            .mynewdiv {
+                width: 335px;
+            }
+        }
+
+        @media (min-width:992px) {
+            .mynewdiv {
+                width: unset;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-3 p-lg-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dolor commodi, aperiam et accusamus labore.
+                Esse eos quis, adipisci, commodi repellendus facere totam vero natus doloribus maiores magnam non?
+                Fugit!
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-12 p-3 p-lg-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, ex obcaecati. Culpa quos reiciendis, neque
+                quisquam repellendus atque quae illo laboriosam, eum rem, repellat iusto delectus placeat qui architecto
+                velit.
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row g-3">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="mydiv p-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quae officiis, error repellat alias
+                    ratione aliquid molestiae nihil dolorum, iste velit perferendis iusto fugiat eveniet fuga! Aperiam
+                    ut suscipit at.
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="mydiv p-3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quae officiis, error repellat alias
+                    ratione aliquid
+                    molestiae nihil dolorum, iste velit perferendis iusto fugiat eveniet fuga! Aperiam ut suscipit at.
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                <div class="mydiv p-3 mynewdiv">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo quae officiis, error repellat alias
+                    ratione aliquid
+                    molestiae nihil dolorum, iste velit perferendis iusto fugiat eveniet fuga! Aperiam ut suscipit at.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
