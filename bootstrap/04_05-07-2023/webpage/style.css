@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hind";
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+/* ========= header === */
+header h2 {
+    font-weight: 300;
+}
+
+header h2 span {
+    color: #ff5b83;
+    font-weight: 700;
+}
+
+header .navbar a {
+    color: black;
+}
+
+header .navbar-collapse {
+    flex: none;
+}
