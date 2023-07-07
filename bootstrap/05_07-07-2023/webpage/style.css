@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Hind";
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins";
+    font-weight: 700;
+}
+
+/* ========= header === */
+header {
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 1111;
+}
+
+header h2 {
+    font-weight: 300;
+}
+
+header h2 span {
+    color: #ff5b83;
+    font-weight: 700;
+}
+
+header .navbar a {
+    color: black;
+}
+
+header .navbar-collapse {
+    flex: none;
+}
+
+header .divider {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+}
+
+/* ======== button css ========== */
+.readMore {
+    height: 50px;
+    width: 130px;
+    background-color: #ff5b83;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+}
+
+.readMore:hover {
+    color: white;
+    background-color: #0a4599;
+}
+
+/* ========== SLIDER ========== */
+.sliderSec .slider1 {
+    background: url(images/slider2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderSec .slider2 {
+    background: url(images/slider1.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderSec .slider3 {
+    background: url(images/slider3.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderSec .slider4 {
+    background: url(images/slider4.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.sliderSec .slider1::after,
+.slider2::after,
+.slider3::after,
+.slider4::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.sliderSec .sliderText {
+    padding: 220px 0px;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+.sliderSec .sliderText h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.sliderSec .owl-theme .owl-nav {
+    position: absolute;
+    margin-top: -40px;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sliderSec .owl-carousel .owl-nav button.owl-prev {
+    background-color: black !important;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    color: white !important;
+}
+
+.sliderSec .owl-carousel .owl-nav button.owl-next {
+    background-color: black !important;
+    height: 30px;
+    width: 30px;
+    font-size: 22px;
+    color: white !important;
+}
+
+.sliderSec .moveDown {
+    height: 55px;
+    width: 35px;
+    background-color: transparent;
+    border: 2px solid #ff5b83;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.sliderSec .moveDown .circle {
+    height: 10px;
+    width: 10px;
+    background-color: #ff5b83;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    animation: dotMove 1s linear infinite;
+}
+
+@keyframes dotMove {
+    0% {
+        margin-top: 5px;
+    }
+
+    100% {
+        margin-top: 30px;
+        opacity: 0;
+    }
+}
+
+.sliderSec .moveDownArrow {
+    display: grid;
+    padding: 10px 0px;
+    color: #ff5b83;
+}
+
+.sliderSec .moveDownArrow .a1 {
+    animation: moveDownArrow 1s linear infinite;
+}
+
+.sliderSec .moveDownArrow .a2 {
+    animation: moveDownArrow 1s linear 2s infinite;
+}
+
+.sliderSec .moveDownArrow .a3 {
+    animation: moveDownArrow 1s linear 6s infinite;
+}
+
+@keyframes moveDownArrow {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
