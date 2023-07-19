@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psd to html homepage</title>
+    <!-- font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/logo.png" alt="" class="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse menus" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Promo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="homepage">
+        <div class="container py-5">
+            <div class="homecontent">
+                <h1 class="pb-2">get cashback upto 50%</h1>
+                <p class="pb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem quibusdam et minima ad
+                    laudantium,
+                    vero nobis! Quam hic ea, dicta, ipsa eum est velit voluptatum quia minus dignissimos aliquid vel.
+                </p>
+                <button class="btnorder">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ourchef">
+        <div class="container py-5">
+            <div class="row title py-3 text-center">
+                <h1 class="text-capitalize">Our Chef</h1>
+                <p class="w-75 m-auto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores animi dolor
+                    quasi
+                    inventore
+                    architecto vero fuga laboriosam rem eligendi itaque.</p>
+            </div>
+            <div class="row chef_grid py-5 text-center">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="chefDetails">
+                        <div class="image">
+                            <img src="images/chef1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="chefInfo">
+                            <h5 class="py-1 text-uppercase">aiden hunter</h5>
+                            <p>founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="chefDetails">
+                        <div class="image">
+                            <img src="images/chef2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="chefInfo">
+                            <h5 class="py-1 text-uppercase">ethel ramsey</h5>
+                            <p>co-founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="chefDetails">
+                        <div class="image">
+                            <img src="images/chef3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="chefInfo">
+                            <h5 class="py-1 text-uppercase">fannie stewart</h5>
+                            <p>co-founder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            let header = document.querySelector("header");
+            let current = window.scrollY;
+            if (current > 0) {
+                header.classList.add("topheader")
+            } else {
+                header.classList.remove("topheader")
+            }
+        })
+    </script>
+</body>
+
+</html>

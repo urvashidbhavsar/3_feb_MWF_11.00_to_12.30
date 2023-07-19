@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Archivo", sans-serif;
+}
+
+.btnorder {
+    width: fit-content;
+    padding: 10px 30px;
+    background-color: #f64b3c;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.5s ease all;
+}
+
+.btnorder:hover {
+    background-color: transparent;
+    color: #f64b3c;
+    border: 2px solid #f64b3c;
+}
+
+/* =========================================================== */
+header {
+    /* backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    box-shadow: inset 0px 20px 13px 0px black;
+    transition: 0.2s all cubic-bezier(1, 0, 0, 1);
+}
+
+.topheader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1111;
+    box-shadow: inset 0px 20px 13px 0px black;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.701);
+    transition: 0.2s all cubic-bezier(1, 0, 0, 1);
+}
+
+.navbar-brand img {
+    height: 50px;
+    width: 70px;
+}
+
+.navbar-expand-lg .navbar-nav {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.navbar-expand-lg .navbar-nav a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.homepage {
+    background: url(images/homepage.png) no-repeat center;
+    background-size: cover;
+}
+
+.homepage .homecontent {
+    color: white;
+    width: 40%;
+    padding: 80px 0px;
+}
+
+.homepage .homecontent h1 {
+    font-size: 60px;
+    text-transform: capitalize;
+}
+
+.homepage .homecontent p {
+    letter-spacing: 1px;
+}
+
+.ourchef {
+    background: url(images/Designpattern.png) no-repeat center;
+    background-size: cover;
+    color: #f64b3c;
+}
